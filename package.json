@@ -1,0 +1,22 @@
+{
+  "name": "petar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin":"index.js",
+  "directories": {
+    "templates": "templates"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "templates"
+  ],
+  "author": "Petar Paunovic",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.1.1"
+  }
+}
