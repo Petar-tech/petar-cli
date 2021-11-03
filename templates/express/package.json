@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_PATH=./dist node dist/index.js",
     "start:dev": "NODE_ENV=dev nodemon -r tsconfig-paths/register src/index.ts",
-    "test": "NODE_ENV=test mocha --check-leaks -r ts-node/register -r tsconfig-paths/register \"src/test/**/*.spec.ts\"",
+    "test": "NODE_ENV=test mocha --check-leaks -r ts-node/register -r tsconfig-paths/register \"tests/**/*.spec.ts\"",
     "build": "tsc -p ."
   },
   "keywords": [],
