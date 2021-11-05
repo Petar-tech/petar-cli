@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import homeControllerFactory from "controllers/home";
+import homeControllerFactory from "src/controllers/home";
 
 const router = Router();
 
