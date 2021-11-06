@@ -1,25 +1,11 @@
-FROM node:12.22-alpine as dev
+FROM node:12.22-alpine 
 
 WORKDIR /app
 
-COPY package.json ./
-COPY /dist ./
+COPY package.json package.json 
+RUN npm i
+
 COPY .env .env
-RUN npm i
+COPY ./dist/src /app/src
 
-
-EXPOSE 8080
-CMD ["node","index.js"]
-
-FROM node:12.22-alpine as prod
-
-WORKDIR /app
-
-COPY package.json ./
-COPY /dist ./
-COPY .env.production .env
-RUN npm i
-
-
-EXPOSE 8080
-CMD ["node","index.js"]
+CMD ["npm","start"]
