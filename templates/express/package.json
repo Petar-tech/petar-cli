@@ -8,7 +8,7 @@
     "start:service": "NODE_PATH=/app node src/index.js",
     "start:dev": "NODE_ENV=dev nodemon -r tsconfig-paths/register src/index.ts",
     "test": "NODE_ENV=test mocha --check-leaks -r ts-node/register -r tsconfig-paths/register \"tests/**/*.spec.ts\"",
-    "build": "tsc -p . && bash ./scripts/build.sh"
+    "build": "tsc -p . && sh ./scripts/build.sh"
   },
   "keywords": [],
   "author": "",
