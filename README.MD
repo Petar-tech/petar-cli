@@ -11,5 +11,5 @@ Petar is a CLI used to generate a template project.
 ## Get Started
 
 ```sh
-npm petar
+npx petar
 ```
