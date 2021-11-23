@@ -1,4 +1,3 @@
-# Petar
 ## Description
 Petar is a CLI used to generate a template project.
 ## Features
